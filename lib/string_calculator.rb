@@ -2,7 +2,8 @@ class StringCalculator
   def add(string_number)
     new_string = extract_delimiter(string_number)
     new_string_array = convert_string_to_array(new_string)
-    new_string_array.map(&:to_i).reduce(0, :+)
+    integer_array = convert_to_integer(new_string_array)
+    integer_array.reduce(0, :+)
   end
 
   def extract_delimiter(string)
@@ -11,5 +12,9 @@ class StringCalculator
 
   def convert_string_to_array(string)
     string.split(',')
+  end
+
+  def convert_to_integer(array)
+    array.map(&:to_i)
   end
 end
