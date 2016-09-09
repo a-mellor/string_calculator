@@ -17,5 +17,9 @@ describe StringCalculator do
     it "returns 15 when passed 1,2,3,4,5" do
       expect(subject.add("1,2,3,4,5")).to eq(15)
     end
+
+    it "returns 6 when passed 1\n2,3" do
+      expect(subject.add("1\n2,3")).to eq(6)
+    end
   end
 end
