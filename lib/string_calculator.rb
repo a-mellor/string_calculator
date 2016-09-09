@@ -1,7 +1,7 @@
 class StringCalculator
   def add(string_number)
-    string_number_array = extract_delimiter(string_number).split(',')
-    string_number_array.map(&:to_i).reduce(0, :+)
+    new_string = extract_delimiter(string_number).split(',')
+    new_string.map(&:to_i).reduce(0, :+)
   end
 
   def extract_delimiter(string)
