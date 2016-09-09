@@ -24,6 +24,10 @@ describe StringCalculator do
       it 'returns 6 when passed 1\n2,3' do
         expect(subject.add("1\n2,3")).to eq(6)
       end
+
+      it 'returns 3 when passed //;\n1;2' do
+        expect(subject.add("//;\n1;2")).to eq(3)
+      end
     end
   end
 end
