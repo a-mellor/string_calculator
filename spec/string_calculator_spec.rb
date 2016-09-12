@@ -18,6 +18,10 @@ describe StringCalculator do
       it "returns 15 when passed 1,2,3,4,5" do
         expect(subject.add("1,2,3,4,5")).to eq(15)
       end
+
+      it "does not allow negative numbers" do
+        expect(subject.add("-1,1")).to eq("negatives not allowed")
+      end
     end
 
     context "when non-default delimiter is used" do

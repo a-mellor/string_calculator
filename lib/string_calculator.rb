@@ -1,5 +1,7 @@
 class StringCalculator
   def add(string_number)
+    puts "nagatives not allowed" if string_number.include?('-')
+      # check_for_negatives(string_number)
     new_string = extract_delimiter(string_number)
     new_string_array = convert_string_to_array(new_string)
     integer_array = convert_to_integer(new_string_array)
@@ -23,4 +25,8 @@ class StringCalculator
   def sum_array(array)
     array.reduce(0, :+)
   end
+  #
+  # def check_for_negatives(string)
+  #   raise "negatives not allowed" if string.include?("-")
+  # end
 end
