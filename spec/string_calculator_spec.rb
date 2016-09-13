@@ -20,7 +20,11 @@ describe StringCalculator do
       end
 
       it "does not allow negative numbers" do
-        expect(subject.add("-1,1")).to eq("negatives not allowed")
+        expect(subject.add("-1,1")).to eq('negatives not allowed')
+      end
+
+      it "ignores numbers bigger than 1000" do
+        expect(subject.add("1000,2")).to eq(2)
       end
     end
 
@@ -30,7 +34,7 @@ describe StringCalculator do
       end
 
       it 'returns 3 when passed //;\n1;2' do
-        expect(subject.add("//;\n1;2")).to eq(3)
+        expect(subject.add("//[;]\n1;2")).to eq(3)
       end
     end
   end
