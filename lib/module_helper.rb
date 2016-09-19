@@ -1,6 +1,0 @@
-require 'delimiter'
-require 'negative_numbers'
-require 'greater_than'
-require 'remove_newlines'
-require 'converter'
-require 'sum_array'
