@@ -11,14 +11,14 @@ Open irb and require the ```string_calculator.rb``` file.
 ```$ irb```<br>
 ```irb(main):001:0> require './lib/string_calculator'```
 
-Initialize a new StringCalculator object.<br>
+Initialize a new ```StringCalculator``` object.<br>
 ```irb(main):002:0> calculator = StringCalculator.new```
 
 Call ```add``` on ```calculator``` with your chosen numbers as a string.
 <br>
 ```irb(main):003:0> calculator.add("1,2,3")```
 
-This produce the sum of your chosen numbers. <br>```irb(main):004:0> 6```
+This produces the sum of your chosen numbers. <br>```irb(main):004:0> 6```
 
 __Example 2__<br>
 It's possible to use a different delimiter to ```,```. It requires an addition to the argument passed to the calculator. Instead of passing ```("1,2,3")``` the format needs to be ```("//[delimiter]\n1,2,3")```, where ```delimiter``` is replaced with an input of your choice, such as ```;```.
