@@ -8,7 +8,8 @@ Numbers need to be entered as a string and seprated with a delimiter. The defual
 __Example 1__<br>
 Open irb and require the ```string_calculator.rb``` file.
 <br>
-```$ irb```
+```$ irb```<br>
+```irb(main):001:0> require './lib/string_calculator'```
 
 Initialize a new StringCalculator object.<br>
 ```irb(main):002:0> calculator = StringCalculator.new```
