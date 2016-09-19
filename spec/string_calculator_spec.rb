@@ -1,6 +1,10 @@
 require "string_calculator"
 
+
 describe StringCalculator do
+
+  subject(:calculator) { described_class.new }
+
   describe "#add" do
     context "when default delimiter is used" do
       it "returns zero if passed an empty string" do
@@ -19,7 +23,7 @@ describe StringCalculator do
         expect(subject.add("1,2,3,4,5")).to eq(15)
       end
 
-      it "does not allow negative numbers" do
+      xit "does not allow negative numbers" do
         expect(subject.add("-1,1")).to eq('negatives not allowed')
       end
 
@@ -41,7 +45,7 @@ describe StringCalculator do
         expect(subject.add("//[****]\n1****2")).to eq(3)
       end
 
-      it 'returns 3 when multiple delimiters are used' do
+      xit 'returns 3 when multiple delimiters are used' do
         expect(subject.add("//[*][%]\n1*2%3")).to eq(3)
       end
     end
