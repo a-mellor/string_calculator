@@ -24,7 +24,7 @@ describe StringCalculator do
       end
 
       it "does not allow negative numbers" do
-        expect{ subject.add("-1,1")}.to raise_error('negatives not allowed')
+        expect{ subject.add("-3,-2,1") }.to raise_error('Negatives not allowed: -3, -2')
       end
 
       it "ignores numbers bigger than 1000" do
