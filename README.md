@@ -31,4 +31,4 @@ It's possible to use a different delimiter to ```,```. It requires an addition t
 This has been built using Rspec. To run the tests type```rspec```
 <br>
 <br>
-There are two tests currently pending that will account for negative numbers and multiple delimiters. The first test will not allow any negative numbers included in the string. The second test will allow the user to use multiple delimiters.
+There is one test currently pending that will implement a feature to allow the user to use multiple delimiters.
