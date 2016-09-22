@@ -1,11 +1,11 @@
 require 'check_for'
-require 'ignore_numbers'
+require 'ignore'
 
 class Sum
 
   def initialize
     @check_for = CheckFor.new
-    @ignore_numbers = IgnoreNumbers.new
+    @ignore_numbers = Ignore.new
   end
 
   def sum_array(array)
